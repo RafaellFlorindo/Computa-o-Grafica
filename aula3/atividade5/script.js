@@ -2,7 +2,7 @@ window.onload = main; // nome da função a ser chamada 'onload'
 var ctx; // contexto com a API para desenhar
 var canvas; // canvas global para fácil acesso
 
-const gridSize = 10;
+const gridSize = 20;
 const totalCells = gridSize * gridSize;
 var cellWidth;
 var cellHeight;
@@ -31,12 +31,9 @@ function drawNextCell() {
     }
 
   let gridX, gridY, cellKey;
-  do {
     gridX = Math.floor(Math.random() * gridSize);
     gridY = Math.floor(Math.random() * gridSize);
     cellKey = `${gridX},${gridY}`;
-  } while (filledCells.has(cellKey)); 
-  filledCells.add(cellKey);
 
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);

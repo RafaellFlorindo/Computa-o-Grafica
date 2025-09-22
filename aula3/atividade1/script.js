@@ -9,7 +9,7 @@ function main() {
   if (!ctx) alert("Não consegui abrir o contexto 2d :-( ");
 
 
-  for (let index = 0; index < 1000; index++) {
+  for (let index = 0; index < 20; index++) {
 
     const r = Math.floor(Math.random() * 256); 
     const g = Math.floor(Math.random() * 256); 

@@ -12,13 +12,13 @@ function main() {
         return;
     }
 
-    const raio = 50;
+    const raio = 30;
     const yPos = canvas.height/2 
 
-    desenheCirculo(50, yPos, raio, 8); 
-    desenheCirculo(150, yPos, raio, 16);
-    desenheCirculo(250, yPos, raio, 32); 
-    desenheCirculo(350, yPos, raio, 64);
+    desenheCirculo(40, yPos, raio, 8); 
+    desenheCirculo(110, yPos, raio, 16);
+    desenheCirculo(180, yPos, raio, 32); 
+    desenheCirculo(250, yPos, raio, 64);
 }
 
 function desenheCirculo(centroX, centroY, raio, numSegmentos) {
@@ -40,6 +40,6 @@ function desenheCirculo(centroX, centroY, raio, numSegmentos) {
 
 
     ctx.strokeStyle = 'black';
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 3;
     ctx.stroke(); 
 }
